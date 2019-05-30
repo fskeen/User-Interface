@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 blockquote, q {
 	quotes: none;
@@ -63,4 +63,229 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Your code starts here!
+
+/* adding the padding on the body */
+
+body {
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-top: 4%;
+	width: 880px;
+}
+
+img {
+	border-radius: 5px;
+}
+
+/* Nav bar & logo */
+
+.navbar {
+	position: sticky;
+	top: 0;
+	background-image: linear-gradient(to right, #adcad6 , white);
+	border-radius: 5px;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	color: black;
+}
+nav a:hover {
+	transition: color 0.2s ease;
+	color: crimson;
+	font-weight: bold;
+}
+
+/* Banner images */
+
+.header-banner {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 50px 0px;
+}
+.header-banner .text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-banner div h1 {
+	font-size: 400%;
+	text-align: center;
+}
+
+.header-banner div a {
+	font-family: "Titillium Web", sans-serif;
+	color: black;
+	border: 1px black solid;
+	padding: 5px 40px;
+	max-width: 160px;
+	border-radius: 5px;
+}
+
+.header-banner div a:hover {
+	transition: color 0.2s ease;
+	color: crimson;
+	font-weight: bold;
+	box-shadow: 5px 5px 5px #adcad6;
+}
+
+.home-header-image {
+	width: 880px;
+}
+
+.services-header-image {
+	width: 880px;
+}
+
+
+/* Intro section */
+
+.intro {
+	display: flex;
+	flex-direction: column;
+
+	margin: 30px 0px;
+}
+
+.intro h2 {
+	font-size: 120%
+}
+
+/* Main content */
+
+/* HOME PAGE */
+
+.over-img {
+	display: flex;
+}
+
+.over-img section {
+	background-color: #f2f2f2;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #adcad6;
+}
+
+.middle-img {
+	margin: 30px 0px;
+}
+
+.under-img {
+	display: flex;
+	justify-content: space-between;
+}
+
+.under-img section {
+	background-color: #f2f2f2;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #adcad6;
+}
+.under-img section {
+	max-width: 32%;
+}
+
+/* SERVICES */
+.border-box {
+	border-top: 1px #adcad6 solid;
+	border-bottom: 2px #adcad6 solid;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+}
+
+.service-box {
+	display: flex;
+	flex-flow: column nowrap;
+	border-radius: 5px;
+	/* border: 1px black solid; */
+	background-color: #f2f2f2;
+	margin: 20px 0px;
+	box-shadow: 5px 5px 5px #adcad6;
+}
+
+.service-box p {
+	max-width: 420px;
+	padding: 20px;
+	padding-top: 0px;
+	margin-top: 10px;
+}
+
+.service-box h2 {
+	padding: 20px;
+	padding-bottom: 0px;
+}
+
+.learnmore {
+	border: 1px solid teal;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px 5px;
+	max-width: 130px;
+	text-align: center;
+	margin: 20px;
+	margin-top: 0px;
+	color: black;
+	background-color: white;	
+}
+
+.learnmore:hover {
+	transition: color 0.2s ease;
+	color: crimson;
+	font-weight: bold;
+	box-shadow: 5px 5px 5px #adcad6;
+}
+
+/* Outro section */
+
+.outro {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.outro p {
+	max-width: 480px;
+}
+
+.outro ul {
+	padding: 20px;
+}
+
+.outro ul li {
+	padding: 5px;
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 30px;
+	
+}
+
+#copyright {
+	margin: 50px 0px;
+	text-align: center;
+}
